@@ -14,8 +14,8 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def home():
-    return '''<h1>Text summarisation api</h1>
-<p>A prototype API for text summarisation</p>'''
+    return '''<h1>Youtube Video Summariser</h1>
+<p>A prototype API for my mini project</p>'''
 
 
 
@@ -29,7 +29,7 @@ def api_id():
         subtitle = " ".join([x['text'] for x in sub])
 
         subtitle = " ".join(subtitle.split())   
-        
+
         doc = nlp(subtitle)
         len(list(doc.sents))
 
