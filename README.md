@@ -18,9 +18,10 @@ Usage example : https://ytvideosummariser.herokuapp.com/api?url=https://www.yout
 
 Output (json format):
 
+
 {
 
- "Message": sum marised contents ,
+ "Message": summarised contents ,
  
  "Transcripts": entire youtube video transcripts
  
