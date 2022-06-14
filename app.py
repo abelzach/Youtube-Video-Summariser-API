@@ -5,12 +5,14 @@ from spacy.lang.en.stop_words import STOP_WORDS
 from string import punctuation
 from collections import Counter
 import en_core_web_sm
-from heapq import nlargest
+from flask_cors import CORS, cross_origin
 import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
+
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def home():

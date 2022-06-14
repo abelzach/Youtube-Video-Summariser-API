@@ -10,3 +10,4 @@ Jinja2==3.0.1
 MarkupSafe==2.0.1
 Werkzeug==1.0.1
 youtube_transcript_api
+flask-cors==3.0.10
